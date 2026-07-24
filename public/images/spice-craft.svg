@@ -1,0 +1,61 @@
+<svg viewBox="0 0 600 400" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#1a1a2e"/>
+      <stop offset="100%" stop-color="#16213e"/>
+    </linearGradient>
+    <linearGradient id="flame" x1="0.5" y1="1" x2="0.5" y2="0">
+      <stop offset="0%" stop-color="#ff6b35"/>
+      <stop offset="50%" stop-color="#ff4d4d"/>
+      <stop offset="100%" stop-color="#ffcc00"/>
+    </linearGradient>
+    <linearGradient id="bowl" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#2d2d44"/>
+      <stop offset="100%" stop-color="#1a1a2e"/>
+    </linearGradient>
+  </defs>
+  <rect width="600" height="400" fill="url(#bg)"/>
+  <g transform="translate(110, 160)">
+    <ellipse cx="190" cy="30" rx="140" ry="25" fill="#2d2d44"/>
+    <path d="M50 30 Q50 150 190 150 Q330 150 330 30" fill="url(#bowl)" stroke="#3d3d54" stroke-width="2"/>
+    <ellipse cx="190" cy="30" rx="140" ry="25" fill="#3d3d54"/>
+    <ellipse cx="190" cy="25" rx="130" ry="20" fill="#4a4a6a"/>
+    <circle cx="160" cy="22" r="8" fill="#ff6b35" opacity="0.8"/>
+    <circle cx="195" cy="18" r="6" fill="#ffcc00" opacity="0.8"/>
+    <circle cx="220" cy="25" r="7" fill="#4ecdc4" opacity="0.8"/>
+    <circle cx="140" cy="28" r="5" fill="#ff6b35" opacity="0.6"/>
+    <circle cx="210" cy="30" r="4" fill="#ff4d4d" opacity="0.7"/>
+    <circle cx="175" cy="15" r="5" fill="#4ecdc4" opacity="0.6"/>
+    <circle cx="240" cy="20" r="4" fill="#ffcc00" opacity="0.7"/>
+  </g>
+  <g transform="translate(210, 100)">
+    <ellipse cx="90" cy="10" rx="40" ry="8" fill="#2d2d44"/>
+    <path d="M50 10 L55 80 L125 80 L130 10" fill="url(#bowl)" stroke="#3d3d54" stroke-width="1.5"/>
+    <ellipse cx="90" cy="10" rx="40" ry="8" fill="#3d3d54"/>
+    <ellipse cx="90" cy="7" rx="35" ry="6" fill="#4a4a6a"/>
+    <circle cx="80" cy="5" r="4" fill="#ffcc00" opacity="0.9"/>
+    <circle cx="95" cy="4" r="3" fill="#ff6b35" opacity="0.9"/>
+    <circle cx="105" cy="7" r="3.5" fill="#4ecdc4" opacity="0.8"/>
+  </g>
+  <g transform="translate(130, 90)">
+    <rect x="0" y="0" width="60" height="8" rx="4" fill="#3d3d54"/>
+    <rect x="5" y="8" width="50" height="50" rx="5" fill="#2d2d44" stroke="#3d3d54" stroke-width="1.5"/>
+    <circle cx="30" cy="25" r="3" fill="#ff4d4d" opacity="0.8"/>
+    <circle cx="30" cy="35" r="2" fill="#ffcc00" opacity="0.8"/>
+    <circle cx="30" cy="45" r="2.5" fill="#4ecdc4" opacity="0.8"/>
+    <line x1="15" y1="18" x2="45" y2="18" stroke="#3d3d54" stroke-width="1"/>
+    <line x1="15" y1="30" x2="45" y2="30" stroke="#3d3d54" stroke-width="0.5"/>
+    <line x1="15" y1="40" x2="45" y2="40" stroke="#3d3d54" stroke-width="0.5"/>
+  </g>
+  <g transform="translate(370, 110)">
+    <path d="M0 40 Q25 0 50 40 Q75 0 100 40" fill="none" stroke="#3d3d54" stroke-width="2"/>
+    <circle cx="25" cy="20" r="15" fill="#2d2d44" stroke="#4ecdc4" stroke-width="1.5"/>
+    <circle cx="75" cy="20" r="15" fill="#2d2d44" stroke="#ff6b35" stroke-width="1.5"/>
+    <circle cx="25" cy="20" r="4" fill="#4ecdc4"/>
+    <circle cx="75" cy="20" r="4" fill="#ff6b35"/>
+    <path d="M15 40 L15 70 L35 70 L35 40" fill="none" stroke="#3d3d54" stroke-width="1.5"/>
+    <path d="M65 40 L65 70 L85 70 L85 40" fill="none" stroke="#3d3d54" stroke-width="1.5"/>
+  </g>
+  <text x="300" y="330" text-anchor="middle" font-family="Arial, sans-serif" font-size="24" font-weight="bold" fill="#4ecdc4">Spice Craft</text>
+  <text x="300" y="355" text-anchor="middle" font-family="Arial, sans-serif" font-size="13" fill="#888">Cook with what you have</text>
+</svg>

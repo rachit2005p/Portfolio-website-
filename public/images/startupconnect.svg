@@ -1,0 +1,74 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" fill="none">
+  <rect width="800" height="500" fill="#f8fffb"/>
+  <rect width="800" height="64" fill="#ffffff" rx="0"/>
+  <line x1="0" y1="64" x2="800" y2="64" stroke="#e2f0e6" stroke-width="1"/>
+  <rect x="28" y="16" width="36" height="32" rx="8" fill="#10b981"/>
+  <text x="46" y="37" text-anchor="middle" fill="white" font-size="15" font-weight="bold" font-family="sans-serif">SC</text>
+  <text x="76" y="38" fill="#1f2937" font-size="18" font-weight="700" font-family="sans-serif">StartupConnect</text>
+  <text x="280" y="38" fill="#6b7280" font-size="14" font-family="sans-serif">Home</text>
+  <text x="340" y="38" fill="#6b7280" font-size="14" font-family="sans-serif">Events</text>
+  <text x="415" y="38" fill="#6b7280" font-size="14" font-family="sans-serif">Categories</text>
+  <text x="510" y="38" fill="#6b7280" font-size="14" font-family="sans-serif">About</text>
+  <text x="575" y="38" fill="#6b7280" font-size="14" font-family="sans-serif">Contact</text>
+  <rect x="630" y="20" width="60" height="26" rx="6" fill="none" stroke="#10b981" stroke-width="1.5"/>
+  <text x="660" y="37" text-anchor="middle" fill="#10b981" font-size="12" font-weight="600" font-family="sans-serif">Login</text>
+  <rect x="700" y="20" width="70" height="26" rx="6" fill="#10b981"/>
+  <text x="735" y="37" text-anchor="middle" fill="white" font-size="12" font-weight="600" font-family="sans-serif">Register</text>
+
+  <rect x="28" y="100" width="450" height="260" rx="16" fill="#ffffff" stroke="#e2f0e6" stroke-width="1"/>
+  <text x="48" y="135" fill="#6b7280" font-size="13" font-weight="600" font-family="sans-serif" letter-spacing="1">STUDENT STARTUP ECOSYSTEM</text>
+  <text x="48" y="175" fill="#111827" font-size="32" font-weight="800" font-family="sans-serif">Find events that move</text>
+  <text x="48" y="215" fill="#111827" font-size="32" font-weight="800" font-family="sans-serif">your idea forward.</text>
+  <text x="48" y="250" fill="#6b7280" font-size="14" font-family="sans-serif">StartupConnect brings hackathons, founder talks, workshops,</text>
+  <text x="48" y="270" fill="#6b7280" font-size="14" font-family="sans-serif">and campus meetups into one focused platform.</text>
+  <rect x="48" y="295" width="130" height="40" rx="8" fill="#10b981"/>
+  <text x="113" y="320" text-anchor="middle" fill="white" font-size="14" font-weight="600" font-family="sans-serif">Explore Events</text>
+  <rect x="192" y="295" width="130" height="40" rx="8" fill="none" stroke="#10b981" stroke-width="1.5"/>
+  <text x="257" y="320" text-anchor="middle" fill="#10b981" font-size="14" font-weight="600" font-family="sans-serif">Create Account</text>
+  <circle cx="60" cy="370" r="4" fill="#10b981"/>
+  <text x="72" y="374" fill="#6b7280" font-size="12" font-family="sans-serif">2 Featured events</text>
+  <circle cx="175" cy="370" r="4" fill="#10b981"/>
+  <text x="187" y="374" fill="#6b7280" font-size="12" font-family="sans-serif">6 Categories</text>
+  <circle cx="290" cy="370" r="4" fill="#10b981"/>
+  <text x="302" y="374" fill="#6b7280" font-size="12" font-family="sans-serif">Community access</text>
+
+  <rect x="510" y="100" width="260" height="120" rx="12" fill="#ffffff" stroke="#e2f0e6" stroke-width="1"/>
+  <rect x="530" y="120" width="80" height="24" rx="12" fill="#d1fae5"/>
+  <text x="570" y="136" text-anchor="middle" fill="#065f46" font-size="11" font-weight="600" font-family="sans-serif">Recommended</text>
+  <text x="530" y="165" fill="#111827" font-size="16" font-weight="700" font-family="sans-serif">Startup journey</text>
+  <text x="530" y="185" fill="#6b7280" font-size="12" font-family="sans-serif">Learn, meet, build, and launch.</text>
+  <rect x="530" y="200" width="65" height="8" rx="4" fill="#10b981"/>
+  <rect x="598" y="200" width="65" height="8" rx="4" fill="#d1fae5"/>
+  <rect x="666" y="200" width="65" height="8" rx="4" fill="#d1fae5"/>
+
+  <rect x="510" y="240" width="260" height="120" rx="12" fill="#ffffff" stroke="#e2f0e6" stroke-width="1"/>
+  <text x="530" y="275" fill="#6b7280" font-size="11" font-weight="600" font-family="sans-serif" letter-spacing="1">STAGES</text>
+  <text x="530" y="298" fill="#111827" font-size="16" font-weight="700" font-family="sans-serif">Ideation</text>
+  <text x="530" y="318" fill="#6b7280" font-size="12" font-family="sans-serif">Validation</text>
+  <text x="530" y="338" fill="#6b7280" font-size="12" font-family="sans-serif">Early Traction</text>
+  <text x="660" y="318" fill="#6b7280" font-size="12" font-family="sans-serif">Scaling</text>
+
+  <rect x="28" y="400" width="230" height="75" rx="10" fill="#ffffff" stroke="#e2f0e6" stroke-width="1"/>
+  <rect x="40" y="412" width="40" height="40" rx="8" fill="#d1fae5"/>
+  <text x="60" y="436" text-anchor="middle" fill="#10b981" font-size="18" font-weight="bold" font-family="sans-serif">01</text>
+  <text x="92" y="430" fill="#111827" font-size="14" font-weight="600" font-family="sans-serif">Discover Events</text>
+  <text x="92" y="450" fill="#6b7280" font-size="11" font-family="sans-serif">Find startup events without</text>
+  <text x="92" y="464" fill="#6b7280" font-size="11" font-family="sans-serif">searching multiple websites.</text>
+
+  <rect x="280" y="400" width="230" height="75" rx="10" fill="#ffffff" stroke="#e2f0e6" stroke-width="1"/>
+  <rect x="292" y="412" width="40" height="40" rx="8" fill="#d1fae5"/>
+  <text x="312" y="436" text-anchor="middle" fill="#10b981" font-size="18" font-weight="bold" font-family="sans-serif">02</text>
+  <text x="344" y="430" fill="#111827" font-size="14" font-weight="600" font-family="sans-serif">Save Opportunities</text>
+  <text x="344" y="450" fill="#6b7280" font-size="11" font-family="sans-serif">Bookmark talks, contests,</text>
+  <text x="344" y="464" fill="#6b7280" font-size="11" font-family="sans-serif">and workshops.</text>
+
+  <rect x="532" y="400" width="240" height="75" rx="10" fill="#ffffff" stroke="#e2f0e6" stroke-width="1"/>
+  <rect x="544" y="412" width="40" height="40" rx="8" fill="#d1fae5"/>
+  <text x="564" y="436" text-anchor="middle" fill="#10b981" font-size="18" font-weight="bold" font-family="sans-serif">03</text>
+  <text x="596" y="430" fill="#111827" font-size="14" font-weight="600" font-family="sans-serif">Host Programs</text>
+  <text x="596" y="450" fill="#6b7280" font-size="11" font-family="sans-serif">Publish your event and help</text>
+  <text x="596" y="464" fill="#6b7280" font-size="11" font-family="sans-serif">students join right sessions.</text>
+
+  <rect x="0" y="485" width="800" height="15" fill="#065f46"/>
+  <text x="400" y="495" text-anchor="middle" fill="#a7f3d0" font-size="9" font-family="sans-serif">StartupConnect — Built with Laravel &amp; Bootstrap 5</text>
+</svg>
