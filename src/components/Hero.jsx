@@ -1,7 +1,7 @@
 import { useState, useRef, useEffect } from "react";
 import { motion, useInView } from "framer-motion";
-import { ArrowRight, ChevronDown, Github, Linkedin, Twitter, Mail, X } from "lucide-react";
-import { SiReact, SiNodedotjs, SiExpress, SiMongodb, SiGit, SiTypescript, SiTailwindcss, SiDocker, SiPython } from "react-icons/si";
+import { ArrowRight, ChevronDown, Github, Linkedin, Mail, X, Code2, Terminal } from "lucide-react";
+import { SiReact, SiNodedotjs, SiExpress, SiMongodb, SiTypescript, SiTailwindcss, SiDocker, SiPython, SiLeetcode } from "react-icons/si";
 
 const technologies = [
   { name: "React", icon: SiReact, color: "#61DAFB", category: "Frontend", experience: "3+ years", projects: "12+ projects", description: "Building complex UIs with hooks, context, and state management." },
@@ -64,7 +64,7 @@ export default function Hero() {
   };
 
   return (
-    <section id="home" ref={sectionRef} className="relative min-h-screen flex items-center pt-32 pb-20 overflow-hidden">
+    <section id="home" ref={sectionRef} className="relative min-h-screen flex items-center pt-20 pb-16 overflow-hidden">
       <div className="absolute inset-0 pointer-events-none">
         <div className="absolute top-1/4 left-1/4 w-[500px] h-[500px] rounded-full blur-[120px]" style={{ backgroundColor: "rgba(46,139,87,0.05)" }} />
         <div className="absolute bottom-1/4 right-1/4 w-[400px] h-[400px] rounded-full blur-[100px]" style={{ backgroundColor: "rgba(87,199,133,0.05)" }} />
@@ -82,10 +82,22 @@ export default function Hero() {
               initial={{ opacity: 0, y: 20 }}
               animate={isInView ? { opacity: 1, y: 0 } : {}}
               transition={{ duration: 0.5, delay: 0.1 }}
-              className="inline-flex items-center gap-2 px-4 py-2 rounded-badge text-sm font-medium w-fit section-label"
+              className="flex items-center gap-3 flex-wrap"
             >
-              <span className="w-2 h-2 rounded-full bg-success animate-pulse" />
-              Full Stack Developer
+              <div className="inline-flex items-center gap-2 px-4 py-2 rounded-badge text-sm font-medium w-fit section-label">
+                <span className="w-2 h-2 rounded-full bg-success animate-pulse" />
+                Full Stack Developer
+              </div>
+              <div className="inline-flex items-center gap-2 px-4 py-2 rounded-badge text-sm font-medium w-fit"
+                style={{ backgroundColor: "rgba(34,197,94,0.1)", color: "#22c55e" }}>
+                <span className="w-2 h-2 rounded-full bg-[#22c55e] animate-pulse" />
+                Open to Opportunities
+              </div>
+              <div className="inline-flex items-center gap-2 px-4 py-2 rounded-badge text-sm font-medium w-fit"
+                style={{ backgroundColor: "rgba(99,102,241,0.1)", color: "#818cf8" }}>
+                <span className="w-1.5 h-1.5 rounded-full bg-[#818cf8]" />
+                Building in Public
+              </div>
             </motion.div>
 
             <div className="mt-8">
@@ -131,8 +143,37 @@ export default function Hero() {
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={isInView ? { opacity: 1, y: 0 } : {}}
-              transition={{ duration: 0.5, delay: 0.5 }}
-              className="flex flex-wrap items-center gap-4 mt-8"
+              transition={{ duration: 0.5, delay: 0.45 }}
+              className="flex items-center gap-3 mt-6 flex-wrap"
+            >
+              {[
+                { icon: Github, href: "https://github.com/rachit2005p", label: "GitHub" },
+                { icon: Linkedin, href: "https://www.linkedin.com/in/rachit2005/", label: "LinkedIn" },
+                { icon: SiLeetcode, href: "https://codolio.com/profile/Rachit1", label: "LeetCode" },
+                { icon: Mail, href: "mailto:rachitpandey062005@gmail.com", label: "Gmail" },
+              ].map(({ icon: Icon, href, label }, i) => (
+                <a
+                  key={label}
+                  href={href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 px-3 py-2 rounded-button text-sm font-medium transition-all duration-300 hover:-translate-y-0.5 hover:shadow-premium-sm"
+                  style={{ backgroundColor: "var(--accent-light)", color: "var(--muted)" }}
+                  onMouseEnter={(e) => { e.currentTarget.style.color = "#2E8B57"; e.currentTarget.style.backgroundColor = "rgba(46,139,87,0.1)"; }}
+                  onMouseLeave={(e) => { e.currentTarget.style.color = "var(--muted)"; e.currentTarget.style.backgroundColor = "var(--accent-light)"; }}
+                >
+                  <Icon className="w-4 h-4" />
+                  <span>{label}</span>
+                  {i < 3 && <span className="hidden sm:inline" style={{ color: "var(--border)" }}>•</span>}
+                </a>
+              ))}
+            </motion.div>
+
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              animate={isInView ? { opacity: 1, y: 0 } : {}}
+              transition={{ duration: 0.5, delay: 0.55 }}
+              className="flex flex-wrap items-center gap-4 mt-5"
             >
               <a href="#projects" className="btn-primary group">
                 View Projects
@@ -142,41 +183,83 @@ export default function Hero() {
                 Contact Me
               </a>
             </motion.div>
-
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              animate={isInView ? { opacity: 1, y: 0 } : {}}
-              transition={{ duration: 0.5, delay: 0.6 }}
-              className="flex items-center gap-4 mt-8"
-            >
-              {[
-                { icon: Github, href: "https://github.com/rachit2005p", label: "GitHub" },
-                { icon: Linkedin, href: "https://www.linkedin.com/in/rachit2005/", label: "LinkedIn" },
-                { icon: Twitter, href: "https://twitter.com", label: "Twitter" },
-                { icon: Mail, href: "mailto:rachitpandey062005@gmail.com", label: "Email" },
-              ].map(({ icon: Icon, href, label }) => (
-                <a
-                  key={label}
-                  href={href}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="w-12 h-12 rounded-button flex items-center justify-center transition-all duration-300 hover:-translate-y-1 hover:shadow-premium-sm"
-                  style={{ backgroundColor: "var(--accent-light)", color: "var(--muted)" }}
-                  onMouseEnter={(e) => { e.currentTarget.style.color = "#2E8B57"; e.currentTarget.style.backgroundColor = "rgba(46,139,87,0.1)"; }}
-                  onMouseLeave={(e) => { e.currentTarget.style.color = "var(--muted)"; e.currentTarget.style.backgroundColor = "var(--accent-light)"; }}
-                >
-                  <Icon className="w-5 h-5" />
-                </a>
-              ))}
-            </motion.div>
           </motion.div>
 
           <motion.div
             initial={{ opacity: 0, scale: 0.8 }}
             animate={isInView ? { opacity: 1, scale: 1 } : {}}
             transition={{ duration: 0.7, delay: 0.3, ease: [0.22, 1, 0.36, 1] }}
-            className="flex items-center justify-center mt-12 lg:mt-0"
+            className="flex items-center justify-center mt-8 lg:mt-0 relative"
           >
+            <div className="absolute inset-0 pointer-events-none">
+              <div className="absolute inset-0 opacity-[0.03]" 
+                style={{ backgroundImage: `url("data:image/svg+xml,%3Csvg width='40' height='40' xmlns='http://www.w3.org/2000/svg'%3E%3Cdefs%3E%3Cpattern id='g' width='40' height='40' patternUnits='userSpaceOnUse'%3E%3Cpath d='M 40 0 L 0 0 0 40' fill='none' stroke='%232E8B57' stroke-width='0.5'/%3E%3C/pattern%3E%3C/defs%3E%3Crect width='100%25' height='100%25' fill='url(%23g)'/%3E%3C/svg%3E")` }} />
+              <motion.div
+                animate={{ y: [0, -10, 0], opacity: [0.04, 0.1, 0.04] }}
+                transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
+                className="absolute top-[8%] right-[5%] text-xs font-mono font-semibold" style={{ color: "#2E8B57" }}
+              >{`<code>`}</motion.div>
+              <motion.div
+                animate={{ y: [0, 10, 0], opacity: [0.03, 0.09, 0.03] }}
+                transition={{ duration: 5, repeat: Infinity, ease: "easeInOut", delay: 0.8 }}
+                className="absolute bottom-[25%] left-[2%] text-xs font-mono" style={{ color: "#57C785" }}
+              >{`const app = new App()`}</motion.div>
+              <motion.div
+                animate={{ y: [0, -8, 0], opacity: [0.03, 0.08, 0.03] }}
+                transition={{ duration: 6, repeat: Infinity, ease: "easeInOut", delay: 1.5 }}
+                className="absolute top-[45%] right-[2%] text-xs font-mono font-semibold" style={{ color: "#2E8B57" }}
+              >{`</>`}</motion.div>
+              <motion.div
+                animate={{ y: [0, -10, 0], opacity: [0.03, 0.08, 0.03] }}
+                transition={{ duration: 7, repeat: Infinity, ease: "easeInOut", delay: 0.3 }}
+                className="absolute bottom-[10%] right-[8%] text-xs font-mono" style={{ color: "#57C785" }}
+              >{`npm run dev`}</motion.div>
+              <motion.div
+                animate={{ y: [0, 8, 0], opacity: [0.02, 0.06, 0.02] }}
+                transition={{ duration: 8, repeat: Infinity, ease: "easeInOut", delay: 2 }}
+                className="absolute top-[18%] left-[5%] text-xs font-mono" style={{ color: "#2E8B57" }}
+              >{`git push`}</motion.div>
+              <motion.div
+                animate={{ y: [0, -6, 0], opacity: [0.02, 0.06, 0.02] }}
+                transition={{ duration: 6.5, repeat: Infinity, ease: "easeInOut", delay: 1.2 }}
+                className="absolute top-[30%] left-[0%] text-xs font-mono" style={{ color: "#57C785" }}
+              >{`{}`}</motion.div>
+              {[...Array(10)].map((_, i) => (
+                <motion.div
+                  key={i}
+                  animate={{
+                    y: [0, -15 - (i % 4) * 6, 0],
+                    x: [0, i % 3 === 0 ? 6 : i % 3 === 1 ? -6 : 0, 0],
+                    opacity: [0.015, 0.07, 0.015],
+                    scale: [1, 1.2 + (i % 3) * 0.2, 1],
+                  }}
+                  transition={{ duration: 4 + (i % 4) * 2, repeat: Infinity, ease: "easeInOut", delay: i * 0.7 }}
+                  className="absolute rounded-full"
+                  style={{
+                    width: `${2 + (i % 3) * 1.5}px`,
+                    height: `${2 + (i % 3) * 1.5}px`,
+                    backgroundColor: i % 2 === 0 ? "#2E8B57" : "#57C785",
+                    top: `${10 + i * 8}%`,
+                    left: `${8 + (i % 7) * 12}%`,
+                    boxShadow: i % 3 === 0 ? `0 0 6px ${i % 2 === 0 ? "#2E8B57" : "#57C785"}` : "none",
+                  }}
+                />
+              ))}
+              <svg className="absolute inset-0 w-full h-full opacity-[0.025]" viewBox="0 0 360 360">
+                <line x1="50%" y1="15%" x2="30%" y2="45%" stroke="#2E8B57" strokeWidth="0.8" strokeDasharray="4 4">
+                  <animate attributeName="stroke-dashoffset" values="0;100" dur="8s" repeatCount="indefinite"/>
+                </line>
+                <line x1="70%" y1="25%" x2="50%" y2="55%" stroke="#57C785" strokeWidth="0.8" strokeDasharray="3 5">
+                  <animate attributeName="stroke-dashoffset" values="0;-100" dur="10s" repeatCount="indefinite"/>
+                </line>
+                <line x1="35%" y1="75%" x2="55%" y2="40%" stroke="#2E8B57" strokeWidth="0.8" strokeDasharray="4 6">
+                  <animate attributeName="stroke-dashoffset" values="0;100" dur="12s" repeatCount="indefinite"/>
+                </line>
+                <line x1="65%" y1="70%" x2="80%" y2="40%" stroke="#57C785" strokeWidth="0.8" strokeDasharray="3 4">
+                  <animate attributeName="stroke-dashoffset" values="0;-100" dur="7s" repeatCount="indefinite"/>
+                </line>
+              </svg>
+            </div>
             <div className="relative" style={{ width: 360, height: 360 }}>
               <div className="w-[360px] h-[360px] rounded-full shadow-premium-lg flex items-center justify-center overflow-hidden"
                 style={{ backgroundColor: "var(--card)" }}>
@@ -226,6 +309,33 @@ export default function Hero() {
                 })}
               </div>
             </div>
+            <motion.div
+              initial={{ opacity: 0, y: 10 }}
+              animate={isInView ? { opacity: 1, y: 0 } : {}}
+              transition={{ delay: 1, duration: 0.5 }}
+              className="absolute -bottom-3 left-0 px-4 py-2 rounded-xl backdrop-blur-sm border text-xs whitespace-nowrap z-20"
+              style={{ backgroundColor: "rgba(255,255,255,0.06)", borderColor: "rgba(46,139,87,0.2)", color: "var(--muted)" }}
+            >
+              <span className="text-primary font-medium">8+</span> projects shipped
+            </motion.div>
+            <motion.div
+              initial={{ opacity: 0, y: -10 }}
+              animate={isInView ? { opacity: 1, y: 0 } : {}}
+              transition={{ delay: 1.2, duration: 0.5 }}
+              className="absolute -top-1 right-0 px-3 py-1.5 rounded-xl backdrop-blur-sm border text-xs whitespace-nowrap z-20"
+              style={{ backgroundColor: "rgba(255,255,255,0.06)", borderColor: "rgba(87,199,133,0.2)", color: "var(--muted)" }}
+            >
+              🚀 <span style={{ color: "#57C785" }}>3+</span> years coding
+            </motion.div>
+            <motion.div
+              initial={{ opacity: 0, x: 10 }}
+              animate={isInView ? { opacity: 1, x: 0 } : {}}
+              transition={{ delay: 1.4, duration: 0.5 }}
+              className="absolute -bottom-3 right-0 px-3 py-1.5 rounded-xl backdrop-blur-sm border text-xs whitespace-nowrap z-20"
+              style={{ backgroundColor: "rgba(255,255,255,0.06)", borderColor: "rgba(46,139,87,0.2)", color: "var(--muted)" }}
+            >
+              <span style={{ color: "#2E8B57" }}>MERN</span> Stack
+            </motion.div>
           </motion.div>
         </div>
       </div>
